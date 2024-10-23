@@ -9,6 +9,7 @@ import Profile from './components/Profile';
 import Chat from './components/Chat';
 import UploadStatus from './components/UploadStatus';
 
+
 const App = () => {
     return (
         <Router>

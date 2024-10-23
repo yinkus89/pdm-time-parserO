@@ -91,6 +91,23 @@ body {
   text-align: center;
 }
 
+.logo {
+  height: 50px; /* Adjust size as needed */
+}
+
+nav {
+  display: flex;
+  gap: 15px; /* Space between navigation links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Hover effect */
+}
 .footer {
   background-color: #282c34; /* Dark background */
   color: white; /* White text */
