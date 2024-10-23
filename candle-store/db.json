@@ -1,0 +1,31 @@
+{
+  "candles": [
+    {
+      "id": "1",
+      "name": "Vanilla Scented Candle",
+      "description": "A warm and comforting vanilla scent.",
+      "price": 10.99,
+      "image": "https://example.com/vanilla-candle.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Lavender Scented Candle",
+      "description": "A calming lavender fragrance.",
+      "price": 12.99,
+      "image": "https://example.com/lavender-candle.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Citrus Scented Candle",
+      "description": "A refreshing citrus aroma.",
+      "price": 9.99,
+      "image": "https://example.com/citrus-candle.jpg"
+    },
+    {
+      "id": "ad8c"
+    },
+    {
+      "id": "2d1b"
+    }
+  ]
+}

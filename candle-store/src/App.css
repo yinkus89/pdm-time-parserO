@@ -1,0 +1,34 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  display: flex;
+}
+
+.navbar, .sidebar, .footer {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-links a, .sidebar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.candle-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.candle-image {
+  width: 100%;
+  height: auto;
+}
