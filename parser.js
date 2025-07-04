@@ -1,5 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const yargs = require('yargs/yargs');
+const { hideBin } = require('yargs/helpers');
+
+// Load CLI arguments
+const argv = yargs(hideBin(process.argv)).argv;
+
 const { parseDate } = require('./utils/dateParser');
 
 const rawText = fs.readFileSync(path.join(__dirname, 'appendix1.txt'), 'utf-8');
@@ -73,8 +79,28 @@ for (const line of lines) {
     });
   }
 }
+// === Filter based on CLI arguments ===
+let filteredEntries = entries;
+
+if (argv.employee) {
+  filteredEntries = filteredEntries.filter(e =>
+    e.employee.toLowerCase().includes(argv.employee.toLowerCase())
+  );
+}
+
+if (argv.project) {
+  filteredEntries = filteredEntries.filter(e =>
+    e.project.toLowerCase().includes(argv.project.toLowerCase())
+  );
+}
+
+if (argv.date) {
+  filteredEntries = filteredEntries.filter(e =>
+    e.date === argv.date
+  );
+}
+
 
 const outputPath = path.join(__dirname, 'output.json');
-fs.writeFileSync(outputPath, JSON.stringify(entries, null, 2), 'utf-8');
-console.log('✅ Output saved to output.json');
-
+fs.writeFileSync(outputPath, JSON.stringify(filteredEntries, null, 2), 'utf-8');
+console.log(`✅ Filtered output saved to output.json (${filteredEntries.length} entries)`);
