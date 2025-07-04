@@ -109,6 +109,48 @@ app.get('/logs', (req, res) => {
   res.json(results);
 });
 
+// Utility function to convert time strings (e.g., "9:00") to minutes
+function timeToMinutes(t) {
+  const [hours, minutes] = t.split(':').map(Number);
+  return hours * 60 + (minutes || 0);
+}
+
+// New summary endpoint
+app.get('/summary', (req, res) => {
+  const logs = parseLogs();
+  const summaryByEmployee = {};
+  const summaryByProject = {};
+
+  logs.forEach(log => {
+    const duration = timeToMinutes(log.endTime) - timeToMinutes(log.startTime);
+
+    // Sum hours per employee
+    if (!summaryByEmployee[log.employee]) {
+      summaryByEmployee[log.employee] = 0;
+    }
+    summaryByEmployee[log.employee] += duration;
+
+    // Sum hours per project
+    if (!summaryByProject[log.project]) {
+      summaryByProject[log.project] = 0;
+    }
+    summaryByProject[log.project] += duration;
+  });
+
+  // Convert minutes to hours rounded to 2 decimals
+  const convert = (obj) =>
+    Object.entries(obj).map(([key, minutes]) => ({
+      name: key,
+      hours: +(minutes / 60).toFixed(2),
+    }));
+
+  res.json({
+    byEmployee: convert(summaryByEmployee),
+    byProject: convert(summaryByProject),
+  });
+});
+
+
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}/logs`);
 });
