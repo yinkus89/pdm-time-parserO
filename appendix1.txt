@@ -1,0 +1,14 @@
+Employee 1: Markus Lange
+1 April, 2025
+9:00 – 12:00 → Frontend-Insider-Tool Abstimmung
+12:30 – 17:30 → Integration Social Login bei Google
+
+2 April, 2025
+8:30 – 11:30 → TB-Anwendung: Meta-Pixel Integration für Kampagnentracking
+12:00 – 16:00 → ÖTB-Anwendung: DSGVO-Update Task
+
+Employee 2: Sabrina König
+
+2/4/25
+8–10 Support-an-Cloud-Komponente
+10:15–11:45 Figma-Export Konzept
