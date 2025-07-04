@@ -1,0 +1,32 @@
+{
+  "Cloud Infrastructure": [
+    "Cloud-Ablagestruktur Entwurf",
+    "Support-an-Cloud-Komponente"
+  ],
+  "Frontend": [
+    "Frontend-Insider-Tool Abstimmung",
+    "Figma-Export Konzept",
+    "Integration Social Login bei Google"
+  ],
+  "Analytics": [
+    "Meta-Pixel Integration für Kampagnentracking"
+  ],
+  "Compliance": [
+    "DSGVO-Update Task",
+    "Pflichtinfo-Umsetzung & Anpassungen abstimmen"
+  ],
+  "Communication": [
+    "Verlagsinfo-Vorbereitung & Abstimmung"
+  ],
+  "Internal Coordination": [
+    "Abstimmung im Entwicklerteam bzgl. DDS-Rückfragen",
+    "Anbindung KI-Support-Tool an Mail-Inbox, Abstimmung im Team"
+  ],
+  "Support": [
+    "GS-Anwendung: Support-Anfrage Klärung Map & Route",
+    "GS-Kleinarbeiten"
+  ],
+  "Meetings": [
+    "Board-Meeting Kooperation: Vorgehen mit HR-System & Vertragsgrundlagen"
+  ]
+}
