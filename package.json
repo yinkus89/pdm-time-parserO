@@ -9,6 +9,8 @@
     "cors": "^2.8.5",
     "dotenv": "^17.0.1",
     "express": "^5.1.0",
+    "google-auth-library": "^10.1.0",
+    "googleapis": "^150.0.1",
     "recharts": "^3.0.2",
     "yargs": "^17.7.2"
   },
