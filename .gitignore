@@ -1,2 +1,5 @@
 pdm-time-parser/
 pdm-time-ui/
+
+.env
+node_modules/
