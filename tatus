@@ -1,0 +1,22 @@
+[33m0445c07[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mupdate/google-auth-flow[m[33m)[m Add all project files to GitHub
+[33m2a3ecfc[m Commit message for pdm-time-parser
+[33mff98751[m Remove .env file from version control
+[33m2bde888[m � Update .env usage and OAuth callback for Google Calendar integration
+[33mb5d24df[m Set up Google OAuth and calendar integration
+[33m528766e[m Install googleapis and google-auth-library
+[33mc5eb370[m Update backend for OAuth2 and Google Calendar API integration
+[33m3f0ac5f[m ♻️ Remove summary endpoint to match updated project scope
+[33m13d22a8[m ➕ Add /summary endpoint for charts
+[33m54927bf[m � Add start script for Render deployment
+[33m0eb407d[m � Backend: initial commit with Express parser
+[33mea29447[m Update package.json for Render deployment
+[33m1ea8cce[m Update output.json after filtering results
+[33m05bea90[m Add CLI filtering and update parser logic
+[33mdc81dc7[m Add task mapping and output file support
+[33mefe689d[m Initial commit with parser
+[33m677b973[m[33m ([m[1;31morigin/update/google-auth-flow[m[33m)[m done
+[33m07eed5b[m done
+[33ma8b5b74[m first commit
+[33m81f71be[m first commit
+[33m054addb[m done
+[33m5b6834b[m first commit
