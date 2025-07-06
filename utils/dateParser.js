@@ -1,4 +1,5 @@
 // utils/dateParser.js
+// utils/dateParser.js
 const { google } = require('googleapis');
 const { OAuth2Client } = require('google-auth-library');
 
@@ -72,4 +73,3 @@ function parseDate(dateStr) {
 }
 
 module.exports = { parseDate, parseTimeTaskLine, getGoogleCalendarEvents, isDuplicate };
-
