@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "parser.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "regenerate-logs": "node parser.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -11,6 +12,7 @@
     "express": "^5.1.0",
     "google-auth-library": "^10.1.0",
     "googleapis": "^150.0.1",
+    "mongoose": "^8.16.1",
     "recharts": "^3.0.2",
     "yargs": "^17.7.2"
   },

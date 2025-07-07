@@ -1,12 +1,13 @@
-// googleCalendar.js
+require('dotenv').config(); // Import dotenv to use environment variables
+
 const { google } = require('googleapis');
 const { OAuth2Client } = require('google-auth-library');
 
-// Google OAuth2 Client setup
+// Google OAuth2 Client setup using environment variables
 const oAuth2Client = new OAuth2Client(
-  'YOUR_GOOGLE_CLIENT_ID',  // Replace with your Google client ID
-  'YOUR_GOOGLE_CLIENT_SECRET',  // Replace with your Google client secret
-  'YOUR_REDIRECT_URI'  // Replace with your redirect URI
+  process.env.GOOGLE_CLIENT_ID,  // Using environment variables for security
+  process.env.GOOGLE_CLIENT_SECRET,
+  process.env.GOOGLE_REDIRECT_URI
 );
 
 // Google Calendar API setup
@@ -42,4 +43,3 @@ async function getAuthTokenFromUrl(code) {
 }
 
 module.exports = { getGoogleCalendarEvents, oAuth2Client, getAuthTokenFromUrl };
-

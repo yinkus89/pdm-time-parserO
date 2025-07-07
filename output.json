@@ -1,21 +1,5 @@
 [
   {
-    "employee": "Markus Lange",
-    "date": "2025-04-01",
-    "startTime": "8:30",
-    "endTime": "11:30",
-    "task": "TB-Anwendung: Meta-Pixel Integration für Kampagnentracking",
-    "project": "Unmapped"
-  },
-  {
-    "employee": "Markus Lange",
-    "date": "2025-04-01",
-    "startTime": "12:00",
-    "endTime": "16:00",
-    "task": "ÖTB-Anwendung: DSGVO-Update Task",
-    "project": "Unmapped"
-  },
-  {
     "employee": "Sabrina König",
     "date": "2025-04-01",
     "startTime": "8:00",
