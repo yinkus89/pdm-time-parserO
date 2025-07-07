@@ -23,7 +23,7 @@ const oAuth2Client = new OAuth2Client(
 );
 
 // MongoDB connection URI
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://juleyvonne3417:qkr07SGp3mCqDjIT@cluster0.mongodb.net/pdm-time-parser?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://juleyvonne3417:zu4jJCj3YrNWIm9s@cluster0.mongodb.net/pdm-time-parser?retryWrites=true&w=majority';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
